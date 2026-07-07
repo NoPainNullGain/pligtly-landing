@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pligtly — Pligter bliver til leg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Nunito', system-ui, sans-serif;
+            background: linear-gradient(180deg, #213D65 0%, #25184B 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        .logo {
+            width: 120px; height: 120px;
+            border-radius: 28px;
+            background: linear-gradient(135deg, #6366F1, #A855F7);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 3rem; font-weight: 800;
+            margin-bottom: 2rem;
+            box-shadow: 0 0 60px rgba(99, 102, 241, 0.3);
+        }
+        h1 {
+            font-size: 3.5rem; font-weight: 800;
+            background: linear-gradient(135deg, #6366F1, #A855F7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+        .tagline {
+            font-size: 1.25rem; color: rgba(255,255,255,0.7);
+            margin-bottom: 2rem; max-width: 480px; line-height: 1.6;
+        }
+        .phone-mockup {
+            width: 260px; height: 500px;
+            border-radius: 32px;
+            background: rgba(255,255,255,0.05);
+            border: 2px solid rgba(255,255,255,0.1);
+            margin: 0 auto 2rem;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 4rem;
+            backdrop-filter: blur(10px);
+        }
+        .description {
+            font-size: 1rem; color: rgba(255,255,255,0.6);
+            margin-bottom: 2.5rem; max-width: 420px; line-height: 1.7;
+        }
+        .buttons {
+            display: flex; gap: 1rem; flex-wrap: wrap;
+            justify-content: center; margin-bottom: 3rem;
+        }
+        .store-btn {
+            padding: 14px 36px; border-radius: 14px;
+            text-decoration: none; font-weight: 700; font-size: 1rem;
+            cursor: default;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #6366F1, #A855F7);
+            color: white;
+            box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
+        }
+        .btn-secondary {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            color: white;
+        }
+        .footer {
+            font-size: 0.85rem; opacity: 0.4;
+        }
+        .footer a {
+            color: rgba(255,255,255,0.6); text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">🧹</div>
+    <h1>Pligtly</h1>
+    <p class="tagline">Pligter bliver til et spil børn elsker — og forældre slipper for at minde.</p>
+
+    <div class="phone-mockup">📱</div>
+
+    <p class="description">
+        Gør huslige pligter sjove. Børn samler points, passer et virtuelt kæledyr,
+        og lærer om penge — alt imens forældre slipper for at minde og true.
+    </p>
+
+    <div class="buttons">
+        <span class="store-btn btn-primary">📱 Kommer til App Store</span>
+        <span class="store-btn btn-secondary">📱 Kommer til Google Play</span>
+    </div>
+
+    <p class="footer">
+        <a href="/privacy">Privatlivspolitik</a> &nbsp;·&nbsp; <a href="mailto:hej@pligtly.dk">hej@pligtly.dk</a>
+    </p>
+</body>
+</html>
