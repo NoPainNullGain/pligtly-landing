@@ -21,14 +21,11 @@
             text-align: center;
             padding: 2rem;
         }
-        .logo {
+        .app-icon {
             width: 120px; height: 120px;
             border-radius: 28px;
-            background: linear-gradient(135deg, #6366F1, #A855F7);
-            display: flex; align-items: center; justify-content: center;
-            font-size: 3rem; font-weight: 800;
             margin-bottom: 2rem;
-            box-shadow: 0 0 60px rgba(99, 102, 241, 0.3);
+            box-shadow: 0 0 60px rgba(99, 102, 241, 0.35);
         }
         h1 {
             font-size: 3.5rem; font-weight: 800;
@@ -42,15 +39,11 @@
             font-size: 1.25rem; color: rgba(255,255,255,0.7);
             margin-bottom: 2rem; max-width: 480px; line-height: 1.6;
         }
-        .phone-mockup {
-            width: 260px; height: 500px;
+        .screenshot {
+            width: 280px;
             border-radius: 32px;
-            background: rgba(255,255,255,0.05);
-            border: 2px solid rgba(255,255,255,0.1);
-            margin: 0 auto 2rem;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 4rem;
-            backdrop-filter: blur(10px);
+            box-shadow: 0 16px 48px rgba(0,0,0,0.3);
+            margin-bottom: 2rem;
         }
         .description {
             font-size: 1rem; color: rgba(255,255,255,0.6);
@@ -84,11 +77,12 @@
     </style>
 </head>
 <body>
-    <div class="logo">🧹</div>
+    <img src="/icon.png" alt="Pligtly" class="app-icon" width="120" height="120">
     <h1>Pligtly</h1>
     <p class="tagline">Pligter bliver til et spil børn elsker — og forældre slipper for at minde.</p>
 
-    <div class="phone-mockup">📱</div>
+    <!-- TODO: Replace with actual app screenshot -->
+    <img src="/screenshot.png" alt="Pligtly app" class="screenshot" width="280" height="560">
 
     <p class="description">
         Gør huslige pligter sjove. Børn samler points, passer et virtuelt kæledyr,
