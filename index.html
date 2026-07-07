@@ -17,18 +17,16 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 2rem;
+            padding: 3rem 2rem 2rem;
         }
         .app-icon {
-            width: 120px; height: 120px;
-            border-radius: 28px;
-            margin-bottom: 2rem;
-            box-shadow: 0 0 60px rgba(99, 102, 241, 0.35);
+            width: 100px; height: 100px;
+            border-radius: 24px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 0 50px rgba(99, 102, 241, 0.3);
         }
         h1 {
-            font-size: 3.5rem; font-weight: 800;
+            font-size: 3rem; font-weight: 800;
             background: linear-gradient(135deg, #6366F1, #A855F7);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -36,18 +34,42 @@
             margin-bottom: 0.5rem;
         }
         .tagline {
-            font-size: 1.25rem; color: rgba(255,255,255,0.7);
-            margin-bottom: 2rem; max-width: 480px; line-height: 1.6;
+            font-size: 1.2rem; color: rgba(255,255,255,0.7);
+            margin-bottom: 1.5rem; max-width: 500px; text-align: center; line-height: 1.6;
         }
-        .screenshot {
-            width: 280px;
-            border-radius: 32px;
-            box-shadow: 0 16px 48px rgba(0,0,0,0.3);
-            margin-bottom: 2rem;
-        }
-        .description {
+        .feature-text {
             font-size: 1rem; color: rgba(255,255,255,0.6);
-            margin-bottom: 2.5rem; max-width: 420px; line-height: 1.7;
+            margin-bottom: 2.5rem; max-width: 600px; text-align: center; line-height: 1.8;
+        }
+        .feature-text strong { color: rgba(255,255,255,0.85); }
+        .feature-badge {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.12);
+            font-size: 0.85rem; font-weight: 600;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+        .screenshots {
+            display: flex; gap: 1.5rem; flex-wrap: wrap;
+            justify-content: center; margin-bottom: 3rem;
+        }
+        .screenshot-card {
+            display: flex; flex-direction: column; align-items: center;
+            gap: 0.75rem;
+        }
+        .screenshot-card img {
+            width: 220px;
+            border-radius: 24px;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+        }
+        .screenshot-card span {
+            font-size: 0.8rem; font-weight: 600;
+            color: rgba(255,255,255,0.45);
+            text-transform: uppercase; letter-spacing: 0.05em;
         }
         .buttons {
             display: flex; gap: 1rem; flex-wrap: wrap;
@@ -69,24 +91,44 @@
             color: white;
         }
         .footer {
-            font-size: 0.85rem; opacity: 0.4;
+            font-size: 0.85rem; opacity: 0.35;
         }
         .footer a {
-            color: rgba(255,255,255,0.6); text-decoration: underline;
+            color: rgba(255,255,255,0.5); text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .screenshots { flex-direction: column; align-items: center; }
+            .screenshot-card img { width: 200px; }
+            h1 { font-size: 2.5rem; }
         }
     </style>
 </head>
 <body>
-    <img src="/icon.png" alt="Pligtly" class="app-icon" width="120" height="120">
+    <img src="/icon.png" alt="Pligtly" class="app-icon" width="100" height="100">
     <h1>Pligtly</h1>
     <p class="tagline">Pligter bliver til et spil børn elsker — og forældre slipper for at minde.</p>
 
-    <!-- TODO: Replace with actual app screenshot -->
-    <img src="/screenshot.png" alt="Pligtly app" class="screenshot" width="280" height="560">
+    <div class="screenshots">
+        <div class="screenshot-card">
+            <img src="/screenshot-parent.png" alt="Forældre dashboard" width="220" height="440">
+            <span>Forældre</span>
+        </div>
+        <div class="screenshot-card">
+            <img src="/screenshot-quest.png" alt="Dagens opgaver" width="220" height="440">
+            <span>Dagens opgaver</span>
+        </div>
+        <div class="screenshot-card">
+            <img src="/screenshot-pet.png" alt="Virtuelt kæledyr" width="220" height="440">
+            <span>Kæledyr</span>
+        </div>
+    </div>
 
-    <p class="description">
-        Gør huslige pligter sjove. Børn samler points, passer et virtuelt kæledyr,
-        og lærer om penge — alt imens forældre slipper for at minde og true.
+    <div class="feature-badge">Prøv Guard the Vault — omvendt lommepenge</div>
+
+    <p class="feature-text">
+        Børn lærer om penge ved at <strong>beskytte</strong> deres månedlige balance.
+        Manglende pligter trækker fra — helt automatisk. Det motiverer.
+        <br><em>Eller brug klassisk Tjen-tilstand: gør pligter, tjen point.</em>
     </p>
 
     <div class="buttons">
